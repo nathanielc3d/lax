@@ -40,5 +40,19 @@ export {
   A2A_WELL_KNOWN_PATH,
 } from './core.js';
 
+// Jobs client: open LAX jobs, one job, submit work
+export { createJobsClient, LaxJobsError, validateSubmission, DEFAULT_JOBS_BASE_URL } from './jobs.js';
+export type {
+  JobsClient,
+  JobsClientOptions,
+  Job,
+  JobTrack,
+  JobList,
+  ListJobsParams,
+  SubmissionInput,
+  Submission,
+  LaxJobsErrorCode,
+} from './jobs.js';
+
 /** Protocol version constant */
 export const LAX_VERSION = '1.0' as const;
